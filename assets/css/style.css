@@ -49,6 +49,12 @@ nav ul {
     margin: auto;
 }
 
+.banner .container {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+
 .bar {
     background-color: #006341;
     width: 168px;
@@ -63,6 +69,7 @@ h1 {
     margin: 0;
     margin-bottom: 40px;
 }
+
 
 h2 {
     width: 450px;
@@ -149,10 +156,10 @@ input::placeholder {
     background-image: url('../images/bg.jpg');
     background-position: center top;
     background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 150px;
+    /* padding-top: 120px;
+    padding-bottom: 150px; */
+    height: calc(100vh - 100px);
 }
-
 
 .banner-images{
     margin-top: 60px;
@@ -417,9 +424,18 @@ footer a:hover{
     .header-menu {
         margin-left: 25px;
     }
-
+    
     .banner {
-        padding-bottom: 40px;
+        padding-top: 40px;
+        height: 450px;
+        /* height: calc(100vh - 300px); */
+    }
+
+    .banner .container {
+        /* height: calc(100vh - 100px); */
+        display: block;
+        align-items: center;
+
     }
 
     h1 {
